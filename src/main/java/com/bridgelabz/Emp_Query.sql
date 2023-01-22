@@ -60,3 +60,5 @@ add column Deductions INT UNSIGNED,
 add column Taxable_Pay INT UNSIGNED,
 add column Income_Tax INT UNSIGNED,
 add column Net_Pay INT UNSIGNED;
+
+
