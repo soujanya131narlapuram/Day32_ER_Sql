@@ -62,3 +62,8 @@ add column Income_Tax INT UNSIGNED,
 add column Net_Pay INT UNSIGNED;
 
 
+--UC10
+ER Relationship –
+1.M to M: Department <-> Employee
+2.one to M: Company <-> Employee
+3.one to one: Employee <-> Payroll
