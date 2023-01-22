@@ -67,3 +67,37 @@ ER Relationship –
 1.M to M: Department <-> Employee
 2.one to M: Company <-> Employee
 3.one to one: Employee <-> Payroll
+
+--UC11
+CREATE TABLE Employee (
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    name VARCHAR(150) NOT NULL,
+    salary DOUBLE NOT NULL,
+    dep_id  int,
+    company_id int,
+    payroll_id int,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE Department (
+dep_id  int,
+dep_name varchar(30),
+primary key (dep_id)
+);
+
+CREATE TABLE Company (
+comp_id  int,
+comp_name varchar(30),
+primary key (comp_id)
+);
+
+CREATE TABLE Payroll (
+payroll_id  int,
+Basic_Pay INT UNSIGNED,
+Deductions INT UNSIGNED,
+Taxable_Pay INT UNSIGNED,
+Income_Tax INT UNSIGNED,
+Net_Pay INT UNSIGNED,
+primary key (payroll_id)
+);
+
