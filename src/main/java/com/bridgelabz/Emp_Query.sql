@@ -101,3 +101,32 @@ Net_Pay INT UNSIGNED,
 primary key (payroll_id)
 );
 
+
+insert into Employee(name,salary,dep_id,company_id,payroll_id)
+values("Soujanya",6000000.0,1,1,1001),
+("Ashok",10000000.0,1,1,2001),
+("Sravan",9000000.0,2,2,4001);
+
+select * from Employee;
+
+insert into Department()
+values(1,'HR'),
+(2,'Sales');
+
+select * from Department;
+
+insert into Company()
+values(1,'Abc Techonologies'),
+(2,'xyz technologies');
+
+select * from Company;
+
+insert into Payroll()
+values(1001, 500000,0,700000,100000,600000),
+(2001, 500000,0,1100000,100000,1000000),
+(4001, 50000,0,1000000,1000000,9000000);
+
+select * from Payroll;
+
+select * from Employee
+where name = "Ashok";
